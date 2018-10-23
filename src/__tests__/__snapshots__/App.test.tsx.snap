@@ -1,9 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`snapshot 1`] = `
-<p>
-  Hello 
-  Pedro
-  !
-</p>
+<div>
+  <p>
+    Hello 
+    Pedro
+    !
+  </p>
+  <p>
+    You have 
+    0
+     transactions!n
+  </p>
+</div>
 `;

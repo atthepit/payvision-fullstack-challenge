@@ -1,12 +1,32 @@
 import React from "react";
+import { search, Transaction } from "./transactions/transactions";
 
 interface Props {
   name: string;
 }
 
-class App extends React.Component<Props> {
+interface State {
+  transactions: Transaction[];
+}
+
+class App extends React.Component<Props, State> {
+  public state = {
+    transactions: [] as Transaction[]
+  };
+  public componentDidMount() {
+    search({
+      orderBy: "-date"
+    }).then(transactions => {
+      this.setState({ transactions });
+    });
+  }
   render() {
-    return <p>Hello {this.props.name}!</p>;
+    return (
+      <div>
+        <p>Hello {this.props.name}!</p>
+        <p>You have {this.state.transactions.length} transactions!n</p>
+      </div>
+    );
   }
 }
 
