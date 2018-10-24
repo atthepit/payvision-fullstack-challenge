@@ -1,14 +1,75 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`snapshot 1`] = `
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  margin-bottom: 1rem;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.emotion-5 > * {
+  margin-left: 2%;
+}
+
+.emotion-0 {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.emotion-1 {
+  border: 1px solid #213d8f;
+  color: #213d8f;
+  font-weight: 600;
+  padding: 0.4rem;
+}
+
+.emotion-4 {
+  background-color: #8ec03f;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+.emotion-4:hover {
+  cursor: pointer;
+}
+
+.emotion-4:hover,
+.emotion-4:focus {
+  background-color: hsl( 83, 51%, 55% );
+}
+
 <div>
-  <form>
+  <form
+    class="emotion-5"
+  >
     <label
+      class="emotion-0"
       for="action"
     >
       Action
     </label>
     <select
+      class="emotion-1"
       id="action"
       name="action"
     >
@@ -29,11 +90,13 @@ exports[`snapshot 1`] = `
       </option>
     </select>
     <label
+      class="emotion-0"
       for="currencyCode"
     >
       Currency Code
     </label>
     <select
+      class="emotion-1"
       id="currencyCode"
       name="currencyCode"
     >
@@ -53,6 +116,7 @@ exports[`snapshot 1`] = `
       </option>
     </select>
     <button
+      class="emotion-4"
       type="submit"
     >
       Search

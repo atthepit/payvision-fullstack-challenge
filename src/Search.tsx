@@ -1,9 +1,24 @@
 import React, { FormEvent } from "react";
+import styled from "react-emotion";
 import { Filters } from "./transactions/transactions";
+import Select from "./ui/Select";
+import Button from "./ui/Button";
 
 interface Props {
   onSearch: (filters: Filters) => void;
 }
+
+const StyledForm = styled("form")`
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 1rem;
+  flex-basis: 100%;
+  justify-content: flex-end;
+
+  & > * {
+    margin-left: 2%;
+  }
+`;
 
 class Search extends React.Component<Props> {
   public handleSearchSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -32,24 +47,22 @@ class Search extends React.Component<Props> {
 
   public render() {
     return (
-      <form onSubmit={this.handleSearchSubmit}>
-        <label htmlFor="action">Action</label>
-        <select name="action" id="action">
+      <StyledForm onSubmit={this.handleSearchSubmit}>
+        <Select name="action" label="Action">
           <option value="">Transaction type</option>
           <option value="payment">Payment</option>
           <option value="credit">Credit</option>
-        </select>
+        </Select>
 
-        <label htmlFor="currencyCode">Currency Code</label>
-        <select name="currencyCode" id="currencyCode">
+        <Select name="currencyCode" label="Currency Code">
           <option value="">Currency</option>
           <option>EUR</option>
           <option>USD</option>
           <option>JPY</option>
-        </select>
+        </Select>
 
-        <button type="submit">Search</button>
-      </form>
+        <Button type="submit">Search</Button>
+      </StyledForm>
     );
   }
 }
