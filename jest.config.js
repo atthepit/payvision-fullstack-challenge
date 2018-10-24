@@ -10,5 +10,6 @@ module.exports = {
     }
   },
   testMatch: ["**/__tests__/*.+(ts|tsx|js)"],
-  setupFiles: ["./jest.setup.js"]
+  setupTestFrameworkScriptFile: require.resolve("./jest.setup.js"),
+  collectCoverageFrom: ["**/src/**/*.ts", "**/src/**/*.tsx"]
 };
