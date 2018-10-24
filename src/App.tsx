@@ -1,14 +1,13 @@
 import React from "react";
+import "./ui/GlobalStyle";
 import { search, Transaction, Filters } from "./transactions/transactions";
 import Search from "./Search";
-
-interface Props {}
 
 interface State {
   transactions: Transaction[];
 }
 
-class App extends React.Component<Props, State> {
+class App extends React.Component<{}, State> {
   public state = {
     transactions: [] as Transaction[]
   };
