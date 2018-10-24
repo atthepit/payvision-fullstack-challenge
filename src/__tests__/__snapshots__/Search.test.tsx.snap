@@ -58,76 +58,67 @@ exports[`snapshot 1`] = `
   background-color: hsl( 83, 51%, 55% );
 }
 
-<div>
-  <form
-    class="emotion-5"
+<form
+  class="emotion-5"
+>
+  <label
+    class="emotion-0"
+    for="action"
   >
-    <label
-      class="emotion-0"
-      for="action"
-    >
-      Action
-    </label>
-    <select
-      class="emotion-1"
-      id="action"
-      name="action"
-    >
-      <option
-        value=""
-      >
-        Transaction type
-      </option>
-      <option
-        value="payment"
-      >
-        Payment
-      </option>
-      <option
-        value="credit"
-      >
-        Credit
-      </option>
-    </select>
-    <label
-      class="emotion-0"
-      for="currencyCode"
-    >
-      Currency Code
-    </label>
-    <select
-      class="emotion-1"
-      id="currencyCode"
-      name="currencyCode"
-    >
-      <option
-        value=""
-      >
-        Currency
-      </option>
-      <option>
-        EUR
-      </option>
-      <option>
-        USD
-      </option>
-      <option>
-        JPY
-      </option>
-    </select>
-    <button
-      class="emotion-4"
-      type="submit"
-    >
-      Search
-    </button>
-  </form>
-  <p
-    data-testid="transactions"
+    Action
+  </label>
+  <select
+    class="emotion-1"
+    id="action"
+    name="action"
   >
-    You have 
-    0
-     transactions!
-  </p>
-</div>
+    <option
+      value=""
+    >
+      Transaction type
+    </option>
+    <option
+      value="payment"
+    >
+      Payment
+    </option>
+    <option
+      value="credit"
+    >
+      Credit
+    </option>
+  </select>
+  <label
+    class="emotion-0"
+    for="currencyCode"
+  >
+    Currency Code
+  </label>
+  <select
+    class="emotion-1"
+    id="currencyCode"
+    name="currencyCode"
+  >
+    <option
+      value=""
+    >
+      Currency
+    </option>
+    <option>
+      EUR
+    </option>
+    <option>
+      USD
+    </option>
+    <option>
+      JPY
+    </option>
+  </select>
+  <button
+    class="emotion-4"
+    type="submit"
+  >
+    Search
+  </button>
+</form>
 `;

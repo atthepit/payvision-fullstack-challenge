@@ -14,15 +14,6 @@ afterEach(() => {
   search.mockReset();
 });
 
-test("snapshot", async () => {
-  search.mockImplementation(() => Promise.resolve([{}]));
-  const { container, getByTestId } = render(<App />);
-  expect(container.firstChild).toMatchSnapshot();
-  const result = await waitForElement(() => getByTestId("transactions"));
-  expect(result.textContent).toMatch("1");
-  expect(search).toHaveBeenCalledTimes(1);
-});
-
 test("handleSearch", async () => {
   search.mockImplementation(() => Promise.resolve([]));
   const { getByLabelText, getByText, getByTestId } = render(<App />);

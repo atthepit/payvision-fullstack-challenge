@@ -4,6 +4,12 @@ import Search from "../Search";
 
 afterEach(cleanup);
 
+test("snapshot", () => {
+  const onSearch = jest.fn();
+  const { container } = render(<Search onSearch={onSearch} />);
+  expect(container.firstChild).toMatchSnapshot();
+});
+
 test("call onSearch with filters on submit", () => {
   const onSearch = jest.fn();
   const { container, getByLabelText, getByText } = render(
