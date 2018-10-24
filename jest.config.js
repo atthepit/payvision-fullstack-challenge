@@ -11,5 +11,9 @@ module.exports = {
   },
   testMatch: ["**/__tests__/*.+(ts|tsx|js)"],
   setupTestFrameworkScriptFile: require.resolve("./jest.setup.js"),
-  collectCoverageFrom: ["**/src/**/*.ts", "**/src/**/*.tsx"]
+  collectCoverageFrom: ["**/src/**/*.ts", "**/src/**/*.tsx"],
+  moduleNameMapper: {
+    "\\.png$": require.resolve("./tests/png-mock"),
+    "\\.svg$": require.resolve("./tests/svg-mock")
+  }
 };
