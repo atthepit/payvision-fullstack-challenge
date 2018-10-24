@@ -16,7 +16,7 @@ const CREDENTIALS = btoa(
 
 const BASE_URL = process.env.API_BASE_URL;
 
-interface Filters {
+export interface Filters {
   action?: string;
   currencyCode?: string;
   orderBy?: string;

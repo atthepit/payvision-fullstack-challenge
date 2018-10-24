@@ -2,15 +2,68 @@
 
 exports[`snapshot 1`] = `
 <div>
-  <p>
-    Hello 
-    Pedro
-    !
-  </p>
-  <p>
+  <form>
+    <label
+      for="action"
+    >
+      Action
+    </label>
+    <select
+      id="action"
+      name="action"
+    >
+      <option
+        value=""
+      >
+        Transaction type
+      </option>
+      <option
+        value="payment"
+      >
+        Payment
+      </option>
+      <option
+        value="credit"
+      >
+        Credit
+      </option>
+    </select>
+    <label
+      for="currencyCode"
+    >
+      Currency Code
+    </label>
+    <select
+      id="currencyCode"
+      name="currencyCode"
+    >
+      <option
+        value=""
+      >
+        Currency
+      </option>
+      <option>
+        EUR
+      </option>
+      <option>
+        USD
+      </option>
+      <option>
+        JPY
+      </option>
+    </select>
+    <button
+      type="submit"
+    >
+      Search
+    </button>
+  </form>
+  <p
+    data-testid="transactions"
+  >
     You have 
     0
-     transactions!n
+     transactions!
   </p>
 </div>
 `;

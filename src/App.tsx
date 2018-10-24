@@ -1,9 +1,8 @@
 import React from "react";
-import { search, Transaction } from "./transactions/transactions";
+import { search, Transaction, Filters } from "./transactions/transactions";
+import Search from "./Search";
 
-interface Props {
-  name: string;
-}
+interface Props {}
 
 interface State {
   transactions: Transaction[];
@@ -13,18 +12,26 @@ class App extends React.Component<Props, State> {
   public state = {
     transactions: [] as Transaction[]
   };
+
   public componentDidMount() {
-    search({
-      orderBy: "-date"
-    }).then(transactions => {
+    search().then(transactions => {
       this.setState({ transactions });
     });
   }
-  render() {
+
+  public handleSearch = (filters: Filters) => {
+    search(filters).then(transactions => {
+      this.setState({ transactions });
+    });
+  };
+
+  public render() {
     return (
       <div>
-        <p>Hello {this.props.name}!</p>
-        <p>You have {this.state.transactions.length} transactions!n</p>
+        <Search onSearch={this.handleSearch} />
+        <p data-testid="transactions">
+          You have {this.state.transactions.length} transactions!
+        </p>
       </div>
     );
   }
