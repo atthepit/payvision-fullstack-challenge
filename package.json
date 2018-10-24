@@ -8,28 +8,6 @@
     "lint": "tslint --project .",
     "start": "parcel src/index.html"
   },
-  "jest": {
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ],
-    "transform": {
-      "^.+\\.(ts|tsx)$": "ts-jest"
-    },
-    "globals": {
-      "ts-jest": {
-        "tsConfig": "tsconfig.json",
-        "diagnostics": false
-      }
-    },
-    "testMatch": [
-      "**/__tests__/*.+(ts|tsx|js)"
-    ],
-    "setupFiles": [
-      "./jest.setup.js"
-    ]
-  },
   "devDependencies": {
     "@types/dotenv": "^4.0.3",
     "@types/jest": "^23.3.7",
