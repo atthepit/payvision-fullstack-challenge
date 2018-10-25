@@ -30,6 +30,8 @@ It will start a server on port **1234** that you can visit with your preferred b
 
 ## Running tests
 
+Make sure you have filled in the environment variables in the `.env.test` file. Since it doesn't call the real API you can fill in the values that you want.
+
 You can run all tests with the following commands:
 
 ```sh
