@@ -6,9 +6,9 @@ This project was built to solve the Payvision Fullstack Challenge. You can visit
 
 ## Installing
 
-You need to have installed [node](https://nodejs.org/es/) and [npm](https://www.npmjs.com/). The project has been built with versions 10.11 of node and 6.4 of npm. You install and manage node versions with [nvm](https://github.com/creationix/nvm).
+You need to have installed [node](https://nodejs.org/es/) and [npm](https://www.npmjs.com/). The project has been built with versions 10.11 of node and 6.4 of npm. You can install and manage node versions with [nvm](https://github.com/creationix/nvm).
 
-Once installed, you can install project dependencies with:
+Once installed, you have to install the project dependencies with:
 
 ```sh
 npm install
