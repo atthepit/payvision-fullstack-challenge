@@ -16,7 +16,7 @@ test("should throw invalid filter error with invalid filter", async () => {
     Promise.reject({ response: { data: { message: "INVALID_FILTER" } } })
   );
   try {
-    await search();
+    await search({ invalid: "filter" });
     fail("Search did not fail as expected");
   } catch (error) {
     expect(error.message).toEqual("One or more invalid filters");
