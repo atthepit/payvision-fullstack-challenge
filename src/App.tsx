@@ -2,19 +2,23 @@ import React from "react";
 import "./ui/GlobalStyle";
 import { search, Transaction, Filters } from "./transactions/transactions";
 import Search from "./Search";
+import TransactionsTable from "./TransactionsTable/TransactionsTable";
+import Loading from "./ui/Loading";
 
 interface State {
+  loading: boolean;
   transactions: Transaction[];
 }
 
 class App extends React.Component<{}, State> {
   public state = {
+    loading: true,
     transactions: [] as Transaction[]
   };
 
   public componentDidMount() {
     search().then(transactions => {
-      this.setState({ transactions });
+      this.setState({ transactions, loading: false });
     });
   }
 
@@ -25,12 +29,14 @@ class App extends React.Component<{}, State> {
   };
 
   public render() {
+    if (this.state.loading) {
+      return <Loading />;
+    }
+
     return (
       <div>
         <Search onSearch={this.handleSearch} />
-        <p data-testid="transactions">
-          You have {this.state.transactions.length} transactions!
-        </p>
+        <TransactionsTable transactions={this.state.transactions} />
       </div>
     );
   }

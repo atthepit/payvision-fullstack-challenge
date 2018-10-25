@@ -1,0 +1,346 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+.emotion-27 {
+  display: none;
+}
+
+.emotion-1 {
+  -webkit-flex-basis: 14%;
+  -ms-flex-preferred-size: 14%;
+  flex-basis: 14%;
+  margin-left: 2%;
+  color: #4a4a4a;
+}
+
+@media (max-width:767px) {
+  .emotion-1 {
+    display: none;
+  }
+}
+
+.emotion-2 {
+  -webkit-flex-basis: 22%;
+  -ms-flex-preferred-size: 22%;
+  flex-basis: 22%;
+  margin-left: 2%;
+  color: #4a4a4a;
+}
+
+@media (max-width:767px) {
+  .emotion-2 {
+    display: none;
+  }
+}
+
+.emotion-25 {
+  margin: 0 1rem;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #e8ebf3;
+}
+
+@media (min-width:768px) {
+  .emotion-25 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    max-height: 16rem;
+  }
+}
+
+.emotion-15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+
+@media (min-width:768px) {
+  .emotion-15 {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin-bottom: 2rem;
+}
+
+.emotion-7 {
+  color: #213d8f;
+  margin-right: 1rem;
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin-bottom: 2rem;
+}
+
+@media (min-width:768px) {
+  .emotion-12 {
+    display: none;
+  }
+}
+
+.emotion-28 {
+  background-color: #f6f7fb;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  padding: 1rem 0;
+  margin: 0 1rem;
+  border-top: 1px solid #e8ebf3;
+  font-weight: 600;
+}
+
+.emotion-6:hover {
+  cursor: pointer;
+}
+
+.emotion-26 {
+  overflow: hidden;
+  -webkit-transition: max-height 0.25s ease-in-out;
+  transition: max-height 0.25s ease-in-out;
+  max-height: 50rem;
+}
+
+.emotion-0 {
+  -webkit-flex-basis: 22%;
+  -ms-flex-preferred-size: 22%;
+  flex-basis: 22%;
+  margin-left: 2%;
+  color: #4a4a4a;
+}
+
+.emotion-3 {
+  -webkit-flex-basis: 22%;
+  -ms-flex-preferred-size: 22%;
+  flex-basis: 22%;
+  margin-left: 2%;
+  color: #4a4a4a;
+  text-transform: capitalize;
+}
+
+.emotion-4 {
+  -webkit-flex-basis: 14%;
+  -ms-flex-preferred-size: 14%;
+  flex-basis: 14%;
+  margin-left: 2%;
+  color: #4a4a4a;
+  text-align: right;
+}
+
+.emotion-5 {
+  -webkit-flex-basis: 14%;
+  -ms-flex-preferred-size: 14%;
+  flex-basis: 14%;
+  margin-left: 2%;
+  color: #4a4a4a;
+}
+
+<div>
+  <div
+    class="emotion-28"
+  >
+    <div
+      class="emotion-6"
+      data-id="7b1c2fef-a001-460b-9d9a-7a6d849b1d5d"
+      data-testid="7b1c2fef-a001-460b-9d9a-7a6d849b1d5d"
+    >
+      <div
+        class="emotion-0"
+        span="3"
+      >
+        Meredith Gerlach
+      </div>
+      <div
+        class="emotion-1"
+        span="2"
+      >
+        1060
+      </div>
+      <div
+        class="emotion-2"
+        span="3"
+      >
+        XXXX 
+        0005
+      </div>
+      <div
+        class="emotion-3"
+        span="3"
+      >
+        payment
+      </div>
+      <div
+        class="emotion-4"
+        span="2"
+      >
+        100.00
+      </div>
+      <div
+        class="emotion-5"
+        span="2"
+      >
+        USD
+      </div>
+    </div>
+    <div
+      class="emotion-26"
+      data-hidden="false"
+      data-testid="7b1c2fef-a001-460b-9d9a-7a6d849b1d5d-details"
+    >
+      <div
+        class="emotion-25"
+      >
+        <div
+          class="emotion-15"
+        >
+          <div
+            class="emotion-8"
+          >
+            <span
+              class="emotion-7"
+            >
+              ID:
+            </span>
+            <span>
+              7b1c2fef-a001-460b-9d9a-7a6d849b1d5d
+            </span>
+          </div>
+          <div
+            class="emotion-8"
+          >
+            <span
+              class="emotion-7"
+            >
+              Tracking code:
+            </span>
+            <span>
+              24c22a09-5a94-4552-83de-6128f360b906
+            </span>
+          </div>
+          <div
+            class="emotion-12"
+          >
+            <span
+              class="emotion-7"
+            >
+              Brand:
+            </span>
+            <span>
+              1060
+            </span>
+          </div>
+          <div
+            class="emotion-8"
+          >
+            <span
+              class="emotion-7"
+            >
+              Brand ID:
+            </span>
+            <span>
+              1060
+            </span>
+          </div>
+        </div>
+        <div
+          class="emotion-15"
+        >
+          <div
+            class="emotion-8"
+          >
+            <span
+              class="emotion-7"
+            >
+              First 6 digits:
+            </span>
+            <span>
+              378282
+            </span>
+          </div>
+          <div
+            class="emotion-12"
+          >
+            <span
+              class="emotion-7"
+            >
+              Last 4 digits:
+            </span>
+            <span>
+              0005
+            </span>
+          </div>
+          <div
+            class="emotion-8"
+          >
+            <span
+              class="emotion-7"
+            >
+              Expiry month:
+            </span>
+            <span>
+              03
+            </span>
+          </div>
+          <div
+            class="emotion-8"
+          >
+            <span
+              class="emotion-7"
+            >
+              Expiry year:
+            </span>
+            <span>
+              2020
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="emotion-27"
+      data-id="7b1c2fef-a001-460b-9d9a-7a6d849b1d5d"
+    >
+      Toggle details
+    </button>
+  </div>
+</div>
+`;
