@@ -28,6 +28,16 @@ npm start
 
 It will start a server on port **1234** that you can visit with your preferred browser.
 
+### Troubleshooting
+
+If you had any problem starting the project you can remove Parcel's cache and try again:
+
+```sh
+# ctrl + c or cmd + c to stop the server
+rm -rf .cache/ dist/
+nmp start
+```
+
 ## Running tests
 
 Make sure you have filled in the environment variables in the `.env.test` file. Since it doesn't call the real API you can fill in the values that you want.
