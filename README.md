@@ -33,7 +33,7 @@ It will start a server on port **1234** that you can visit with your preferred b
 If you had any problem starting the project you can remove Parcel's cache and try again:
 
 ```sh
-# ctrl + c or cmd + c to stop the server
+# ctrl + c to stop the server
 rm -rf .cache/ dist/
 nmp start
 ```
